@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/script.js"></script>
   <script src="dist/semantic.min.js"></script>
 </head>
 <body>
@@ -15,7 +16,7 @@
   <div class="ui secondary pointing menu">
     <a class="item"></a>
     <a class="item"></a>
-    <a class="item logodepan">megaresto</a>
+    <a class="item logodepan" href="/">megaresto</a>
     <a class="item" href="/">
       Home
     </a>
@@ -32,12 +33,14 @@
   </div>
   <!-- navbar -->
 
-
-
-
-
-
-
+  <!-- menu makanan-->
+  <h2 class="ui icon header">
+  <div class="content">
+    List Menu
+    <div class="ui horizontal divider">All delicious food are listed here</div>
+  </div>
+</h2>
+  <br>
   <div class="ui container food-list">
     <div class="ui four cards">
       <div class="card">
@@ -45,7 +48,7 @@
           <img src="/images/f1.jpg">
         </div>
         <div class="extra">
-          <h3 class="header">Tomato, red wine & chorizo risotto</h3>
+          <h3 class="header">Tomato, Red Wine & Chorizo Risotto</h3>
         </div>
         <div class="extra food-detail">
           <i class="tag icon"></i>Rice, Dinner Party, Gluten-free, Italian
@@ -53,29 +56,52 @@
         </div>
 
         <div class="extra content">
-          <p class="right floated created harga-Makanan">50.000</p>
-          <button class="ui icon button blue mini">
+          <p class="right floated created harga-Makanan">90.000</p>
+          <button id="menu1" class="ui icon button blue mini">
             <i class="plus icon"></i>
           </button>
-          <button class="ui icon button red mini">
+          <button id="menu2" class="ui icon button red mini">
             <i class="minus icon"></i>
-          </button>
         </div>
+        <div id='a1' class="ui bottom attached button red"></div>
       </div>
       <div class="card">
         <div class="image">
           <img src="/images/f2.jpg">
         </div>
         <div class="extra">
-          <h3 class="header">Chicken milanese with Spaghetti</h3>
+          <h3 class="header">Chicken Milanese with Spaghetti</h3>
         </div>
         <div class="extra food-detail">
-          <i class="tag icon"></i>Chicken, Dinner for two, Romantic meals, Italian
+          <i class="tag icon"></i>Chicken, Dinner, Romantic, Italian
           <div class="ui star rating" data-rating="4"></div>
         </div>
 
         <div class="extra content">
-          <p class="right floated created harga-Makanan">50.000</p>
+          <p class="right floated created harga-Makanan">120.000</p>
+          <button id="menu3" class="ui icon button blue mini">
+            <i class="plus icon"></i>
+          </button>
+          <button id="menu4" class="ui icon button red mini">
+            <i class="minus icon"></i>
+          </button>
+        </div>
+        <div id='a2' class="ui bottom attached button red"></div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="/images/f3.jpg">
+        </div>
+        <div class="extra">
+          <h3 class="header">Individual Vegetarian Lasagnes</h3>
+        </div>
+        <div class="extra food-detail">
+          <i class="tag icon"></i>Vegetables, Vegetarian
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+
+        <div class="extra content">
+          <p class="right floated created harga-Makanan">110.000</p>
           <button class="ui icon button blue mini">
             <i class="plus icon"></i>
           </button>
@@ -86,62 +112,164 @@
       </div>
       <div class="card">
         <div class="image">
-          <img>
+          <img src="/images/f4.jpg">
         </div>
         <div class="extra">
-          Rating:
-          <div class="ui star rating" data-rating="3"></div>
+          <h3 class="header">Blue Cheese, Ham & Apple Burger</h3>
         </div>
-      </div>
-      <div class="card">
-        <div class="image">
-          <img>
-        </div>
-        <div class="extra">
-          Rating:
+        <div class="extra food-detail">
+          <i class="tag icon"></i>Beef, Al Fresco, Alfresco, Father's day
           <div class="ui star rating" data-rating="4"></div>
         </div>
-      </div>
-      <div class="card">
-        <div class="image">
-          <img>
-        </div>
-        <div class="extra">
-          Rating:
-          <div class="ui star rating" data-rating="3"></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="image">
-          <img>
-        </div>
-        <div class="extra">
-          Rating:
-          <div class="ui star rating" data-rating="3"></div>
+
+        <div class="extra content">
+          <p class="right floated created harga-Makanan">125.000</p>
+          <button class="ui icon button blue mini">
+            <i class="plus icon"></i>
+          </button>
+          <button class="ui icon button red mini">
+            <i class="minus icon"></i>
+          </button>
         </div>
       </div>
       <div class="card">
         <div class="image">
-          <img>
+          <img src="/images/f5.jpg">
         </div>
         <div class="extra">
-          Rating:
+          <h3 class="header">Baked Chicken & Porcini Risotto</h3>
+        </div>
+        <div class="extra food-detail">
+          <i class="tag icon"></i>Super Food Family Classics, Book
           <div class="ui star rating" data-rating="4"></div>
         </div>
+
+        <div class="extra content">
+          <p class="right floated created harga-Makanan">135.000</p>
+          <button class="ui icon button blue mini">
+            <i class="plus icon"></i>
+          </button>
+          <button class="ui icon button red mini">
+            <i class="minus icon"></i>
+          </button>
+        </div>
       </div>
       <div class="card">
         <div class="image">
-          <img>
+          <img src="/images/f6.jpg">
         </div>
         <div class="extra">
-          Rating:
+          <h3 class="header">Black & Blushing Worcestershire Fillet</h3>
+        </div>
+        <div class="extra food-detail">
+          <i class="tag icon"></i>Beef, Al Fresco, Alfresco, Father's day
           <div class="ui star rating" data-rating="4"></div>
+        </div>
+
+        <div class="extra content">
+          <p class="right floated created harga-Makanan">225.000</p>
+          <button class="ui icon button blue mini">
+            <i class="plus icon"></i>
+          </button>
+          <button class="ui icon button red mini">
+            <i class="minus icon"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="/images/f7.jpg">
+        </div>
+        <div class="extra">
+          <h3 class="header">Earl Grey Vanila-Infused Ice Cream </h3>
+        </div>
+        <div class="extra food-detail">
+          <i class="tag icon"></i>Eggs, Al Fresco, Alfresco, Vegetarian
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+
+        <div class="extra content">
+          <p class="right floated created harga-Makanan">95.000</p>
+          <button class="ui icon button blue mini">
+            <i class="plus icon"></i>
+          </button>
+          <button class="ui icon button red mini">
+            <i class="minus icon"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="/images/f8.jpg">
+        </div>
+        <div class="extra">
+          <h3 class="header">Chocolate Lava Guinness Cake</h3>
+        </div>
+        <div class="extra food-detail">
+          <i class="tag icon"></i>Chocolate, Afternoon tea, Party food
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+
+        <div class="extra content">
+          <p class="right floated created harga-Makanan">75.000</p>
+          <button class="ui icon button blue mini">
+            <i class="plus icon"></i>
+          </button>
+          <button class="ui icon button red mini">
+            <i class="minus icon"></i>
+          </button>
         </div>
       </div>
     </div>
   </div>
+  <!-- menu makanan-->
 
 
+  <br><br><br><br><br><br><br><br><br>
+
+  <div class="ui container">
+    <div class="ui horizontal divider">Customer Order</div>
+    <br>
+    <div class="ui grid">
+      <div class="five wide column"></div>
+      <div class="six wide column">
+        <div class="ui piled segment">
+          <center>
+            <table class="ui very basic collapsing celled table">
+              <tbody>
+                
+                <tr>
+                  <td>
+                    <h4 class="ui image header">
+                      <img src="" class="ui mini rounded image">
+                      <div class="content">
+                        asdasdas
+                        <div class="sub header">asdasdasd</div>
+                    </div>
+                  </h4></td>
+                  <td>
+
+                  </td>
+                  <td>
+                    <a class="ui green label">${t}</a>
+                  </td>
+                </tr>
+                <div id="p1"></div>
+                <div id="p2"></div>
+                <div id="p3"></div>
+                <div id="p4"></div>
+                <div id="p5"></div>
+                <div id="p6"></div>
+                <div id="p7"></div>
+                <div id="p8"></div>
+              </tbody>
+            </table>
+          </center>
+        </div>
+      </div>
+      <div class="five wide column"></div>
+    </div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </body>
 </html>
