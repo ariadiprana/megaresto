@@ -10,4 +10,8 @@ router.get('/order', function(req, res, next) {
   res.render('order');
 });
 
+router.get('/history', function(req, res, next) {
+  res.render('history');
+});
+
 module.exports = router;

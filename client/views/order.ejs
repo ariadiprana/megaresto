@@ -23,6 +23,9 @@
     <a class="item active" href="/order">
       Order
     </a>
+    <a class="item" href="/history">
+      History
+    </a>
     <div class="right menu">
       <a class="ui item">
         Logout
@@ -33,13 +36,21 @@
   </div>
   <!-- navbar -->
 
+  <!-- message -->
+  <div id="message" class="ui container">
+    <div id="message" class="ui positive message">
+      <i class="close icon"></i>
+      <div id="headerContent"></div>
+    </div>
+  </div>
+
   <!-- menu makanan-->
   <h2 class="ui icon header">
-  <div class="content">
-    Menu List
-    <div class="ui horizontal divider">All delicious food are listed here</div>
-  </div>
-</h2>
+    <div class="content">
+      Menu List
+      <div class="ui horizontal divider">All delicious food are listed here</div>
+    </div>
+  </h2>
   <br>
   <div class="ui container food-list">
     <div class="ui four cards">
@@ -412,15 +423,15 @@
               </div>
               <hr>
               <div class="ui divided selection list">
-                <a class="item right aligned">
+                <div class="right aligned">
                   <div class="ui blue horizontal label">Total</div>
                   <div id="totalAkhir" class="ui blue horizontal label massive"></div>
                   <br><br>
-                  <button class="ui basic button red" >
+                  <button id="order-btn" class="ui basic button red">
                     <i class="icon hand paper"></i>
                     Order
                   </button>
-                </a>
+                </div>
               </div>
             </center>
           </div>

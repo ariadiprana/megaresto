@@ -17,13 +17,13 @@ module.exports = {
 }
 
 function insert(req,res,next){
-    var items = new Users({
+    var items = new Orders({
       makanan:req.body.makanan,
       username:req.body.username,
       meja:req.body.meja,
       total:req.body.total,
       status:req.body.status,
-      dtCreated:req.body.dtCreated
+      dtCreated:new Date()
     })
     items.save()
     res.json(items)
@@ -38,7 +38,7 @@ function update(req,res,next){
       items.meja = req.body.meja
       items.total = req.body.total
       items.status = req.body.status
-      items.dtCreated = req.body.dtCreated
+      items.dtCreated = new Date()
 
       items.save((err)=> {
         if(err) throw err

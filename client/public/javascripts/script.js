@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  $("#message").hide()
   $("#p1").hide()
   $("#p2").hide()
   $("#p3").hide()
@@ -28,6 +28,21 @@ $(document).ready(function(){
   let t7 = 0
   let t8 = 0
 
+  $("#order-btn").click(function(){
+    console.log("Pencet Button");
+    let makanans = `T1${t1}T2${t2}T3${t3}T4${t4}T5${t5}T6${t6}T7${t7}T8${t8}`
+    let totals = t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8
+
+    $.ajax({
+      url:'http://localhost:3000/API/order',
+      type: 'POST',
+      data: {makanan: makanans, username: 'guest', meja: '777', total: totals, status: 'order'},
+      success: function(result){
+        $("#message").show()
+        $("#headerContent").html("Your order is successfully being sent...")
+      }
+    })
+  })
 
   $("#menu1").click(function(){
     t1+=1
