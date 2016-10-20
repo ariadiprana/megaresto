@@ -36,7 +36,7 @@
   <!-- menu makanan-->
   <h2 class="ui icon header">
   <div class="content">
-    List Menu
+    Menu List
     <div class="ui horizontal divider">All delicious food are listed here</div>
   </div>
 </h2>
@@ -102,13 +102,14 @@
 
         <div class="extra content">
           <p class="right floated created harga-Makanan">110.000</p>
-          <button class="ui icon button blue mini">
+          <button id="menu5" class="ui icon button blue mini">
             <i class="plus icon"></i>
           </button>
-          <button class="ui icon button red mini">
+          <button id="menu6" class="ui icon button red mini">
             <i class="minus icon"></i>
           </button>
         </div>
+        <div id='a3' class="ui bottom attached button red"></div>
       </div>
       <div class="card">
         <div class="image">
@@ -124,13 +125,14 @@
 
         <div class="extra content">
           <p class="right floated created harga-Makanan">125.000</p>
-          <button class="ui icon button blue mini">
+          <button id="menu7" class="ui icon button blue mini">
             <i class="plus icon"></i>
           </button>
-          <button class="ui icon button red mini">
+          <button id="menu8" class="ui icon button red mini">
             <i class="minus icon"></i>
           </button>
         </div>
+        <div id='a4' class="ui bottom attached button red"></div>
       </div>
       <div class="card">
         <div class="image">
@@ -146,13 +148,14 @@
 
         <div class="extra content">
           <p class="right floated created harga-Makanan">135.000</p>
-          <button class="ui icon button blue mini">
+          <button id="menu9" class="ui icon button blue mini">
             <i class="plus icon"></i>
           </button>
-          <button class="ui icon button red mini">
+          <button id="menu10" class="ui icon button red mini">
             <i class="minus icon"></i>
           </button>
         </div>
+        <div id='a5' class="ui bottom attached button red"></div>
       </div>
       <div class="card">
         <div class="image">
@@ -168,13 +171,14 @@
 
         <div class="extra content">
           <p class="right floated created harga-Makanan">225.000</p>
-          <button class="ui icon button blue mini">
+          <button id="menu11" class="ui icon button blue mini">
             <i class="plus icon"></i>
           </button>
-          <button class="ui icon button red mini">
+          <button id="menu12" class="ui icon button red mini">
             <i class="minus icon"></i>
           </button>
         </div>
+        <div id='a6' class="ui bottom attached button red"></div>
       </div>
       <div class="card">
         <div class="image">
@@ -190,13 +194,14 @@
 
         <div class="extra content">
           <p class="right floated created harga-Makanan">95.000</p>
-          <button class="ui icon button blue mini">
+          <button id="menu13" class="ui icon button blue mini">
             <i class="plus icon"></i>
           </button>
-          <button class="ui icon button red mini">
+          <button id="menu14" class="ui icon button red mini">
             <i class="minus icon"></i>
           </button>
         </div>
+        <div id='a7' class="ui bottom attached button red"></div>
       </div>
       <div class="card">
         <div class="image">
@@ -212,13 +217,14 @@
 
         <div class="extra content">
           <p class="right floated created harga-Makanan">75.000</p>
-          <button class="ui icon button blue mini">
+          <button id="menu15" class="ui icon button blue mini">
             <i class="plus icon"></i>
           </button>
-          <button class="ui icon button red mini">
+          <button id="menu16" class="ui icon button red mini">
             <i class="minus icon"></i>
           </button>
         </div>
+        <div id='a8' class="ui bottom attached button red"></div>
       </div>
     </div>
   </div>
@@ -226,50 +232,129 @@
 
 
   <br><br><br><br><br><br><br><br><br>
+  <div id="order">
+    <div class="ui container">
+      <div class="ui horizontal divider">Order List</div>
+      <br>
+      <div class="ui grid">
+        <div class="four wide column"></div>
+        <div class="eight wide column">
+          <div class="ui piled segment">
+            <center>
 
-  <div class="ui container">
-    <div class="ui horizontal divider">Customer Order</div>
-    <br>
-    <div class="ui grid">
-      <div class="five wide column"></div>
-      <div class="six wide column">
-        <div class="ui piled segment">
-          <center>
-            <table class="ui very basic collapsing celled table">
-              <tbody>
-                
-                <tr>
-                  <td>
-                    <h4 class="ui image header">
-                      <img src="" class="ui mini rounded image">
-                      <div class="content">
-                        asdasdas
-                        <div class="sub header">asdasdasd</div>
-                    </div>
-                  </h4></td>
-                  <td>
+              <!-- menu 1 -->
+              <div id="p1">
+              <table class="ui very basic collapsing celled table">
+                <tbody>
+                    <tr>
+                      <td>
+                        <h4 class="ui image header">
+                          <img src="/images/f1.jpg" class="ui mini rounded image">
+                          <div class="content">
+                            Tomato, Red Wine & Chorizo Risotto
+                            <div class="sub header">Appetizer</div>
+                          </div>
+                        </h4>
+                        <div id='tot1' class="ui green circular label"></div>
+                        <div id='htot1' class="ui red tag label right aligned"></div>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+              </div>
 
-                  </td>
-                  <td>
-                    <a class="ui green label">${t}</a>
-                  </td>
-                </tr>
-                <div id="p1"></div>
-                <div id="p2"></div>
-                <div id="p3"></div>
-                <div id="p4"></div>
-                <div id="p5"></div>
-                <div id="p6"></div>
-                <div id="p7"></div>
-                <div id="p8"></div>
-              </tbody>
-            </table>
-          </center>
+              <!-- menu 2 -->
+              <div id="p2">
+              <table class="ui very basic collapsing celled table">
+                <tbody>
+                    <tr>
+                      <td>
+                        <h4 class="ui image header">
+                          <img src="/images/f2.jpg" class="ui mini rounded image">
+                          <div class="content">
+                            Chicken Milanese with Spaghetti
+                            <div class="sub header">Main Course</div>
+                          </div>
+                        </h4>
+                        <div id='tot2' class="ui green circular label"></div>
+                        <div id='htot2' class="ui red tag label right aligned"></div>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+              </div>
+
+              <!-- menu 3 -->
+              <div id="p3">
+              <table class="ui very basic collapsing celled table">
+                <tbody>
+                    <tr>
+                      <td>
+                        <h4 class="ui image header">
+                          <img src="/images/f3.jpg" class="ui mini rounded image">
+                          <div class="content">
+                            Individual Vegetarian Lasagnes
+                            <div class="sub header">Main Course</div>
+                          </div>
+                        </h4>
+                        <div id='tot3' class="ui green circular label"></div>
+                        <div id='htot3' class="ui red tag label right aligned"></div>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+              </div>
+
+              <!-- menu 4 -->
+              <div id="p4">
+              <table class="ui very basic collapsing celled table">
+                <tbody>
+                    <tr>
+                      <td>
+                        <h4 class="ui image header">
+                          <img src="/images/f4.jpg" class="ui mini rounded image">
+                          <div class="content">
+                            Blue Cheese, Ham & Apple Burger
+                            <div class="sub header">Main Course</div>
+                          </div>
+                        </h4>
+                        <div id='tot4' class="ui green circular label"></div>
+                        <div id='htot4' class="ui red tag label right aligned"></div>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+              </div>
+
+              <!-- menu 5 -->
+              <div id="p5">
+              <table class="ui very basic collapsing celled table">
+                <tbody>
+                    <tr>
+                      <td>
+                        <h4 class="ui image header">
+                          <img src="/images/f5.jpg" class="ui mini rounded image">
+                          <div class="content">
+                            Baked Chicken & Porcini Risotto
+                            <div class="sub header">Main Course</div>
+                          </div>
+                        </h4>
+                        <div id='tot5' class="ui green circular label"></div>
+                        <div id='htot5' class="ui red tag label right aligned"></div>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+              </div>
+
+            </center>
+          </div>
         </div>
+        <div class="four wide column"></div>
       </div>
-      <div class="five wide column"></div>
     </div>
-  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </body>
 </html>
