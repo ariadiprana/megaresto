@@ -1,0 +1,13 @@
+.logodepan {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
+
+.food-list .ui.card>.extra, .ui.cards>.card>.extra{
+  color:#1e282f;
+}
+
+.food-list .ui.card>.extra, .ui.cards>.card>.food-detail{
+  font-size: 13px;
+  color:#a3865b
+}
