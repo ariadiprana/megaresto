@@ -38,7 +38,7 @@ $(document).ready(function(){
     $("#a1").removeClass("red")
     $("#a1").addClass("green")
     $("#htot1").html(`IDR ${t1*h1}`)
-
+    $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
 
   })
 
@@ -63,6 +63,7 @@ $(document).ready(function(){
       $("#a1").removeClass("red")
       $("#a1").addClass("green")
       $("#htot1").html(`IDR ${t1*h1}`)
+      $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
     }
   })
 
@@ -75,8 +76,7 @@ $(document).ready(function(){
     $("#a2").removeClass("red")
     $("#a2").addClass("green")
     $("#htot2").html(`IDR ${t2*h2}`)
-
-
+    $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
   })
 
   $("#menu4").click(function(){
@@ -100,6 +100,7 @@ $(document).ready(function(){
       $("#a2").removeClass("red")
       $("#a2").addClass("green")
       $("#htot2").html(`IDR ${t2*h2}`)
+      $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
     }
   })
 
@@ -112,7 +113,7 @@ $(document).ready(function(){
     $("#a3").removeClass("red")
     $("#a3").addClass("green")
     $("#htot3").html(`IDR ${t3*h3}`)
-
+    $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
 
   })
 
@@ -137,6 +138,7 @@ $(document).ready(function(){
       $("#a3").removeClass("red")
       $("#a3").addClass("green")
       $("#htot3").html(`IDR ${t3*h3}`)
+      $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
     }
   })
 
@@ -149,7 +151,7 @@ $(document).ready(function(){
     $("#a4").removeClass("red")
     $("#a4").addClass("green")
     $("#htot4").html(`IDR ${t4*h4}`)
-
+    $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
 
   })
 
@@ -174,6 +176,159 @@ $(document).ready(function(){
       $("#a4").removeClass("red")
       $("#a4").addClass("green")
       $("#htot4").html(`IDR ${t4*h4}`)
+      $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
+    }
+  })
+
+  $("#menu9").click(function(){
+    t5+=1
+    $("#order").show()
+    $( "#p5" ).show()
+    $("#tot5").html(t5)
+    $("#a5").html(t5)
+    $("#a5").removeClass("red")
+    $("#a5").addClass("green")
+    $("#htot5").html(`IDR ${t5*h5}`)
+    $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
+
+  })
+
+  $("#menu10").click(function(){
+    t5-=1
+    if(t1==0&&t2==0&&t3==0&&t4==0&&t5==0&&t6==0&&t7==0&&t8==0){
+      $("#order").hide()
+    }
+    if(t5<=0){
+      $("#tot5").html(t5)
+      $("#a5").removeClass("green")
+      $("#a5").addClass("red")
+      $("#a5").html('')
+      $("#htot5").html(`IDR ${t5*h5}`)
+      $("#p5").hide()
+      t5=0
+    }
+    else{
+      $("#p5").show()
+      $("#tot5").html(t5)
+      $("#a5").html(t5)
+      $("#a5").removeClass("red")
+      $("#a5").addClass("green")
+      $("#htot5").html(`IDR ${t5*h5}`)
+      $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
+    }
+  })
+
+  $("#menu11").click(function(){
+    t6+=1
+    $("#order").show()
+    $( "#p6" ).show()
+    $("#tot6").html(t6)
+    $("#a6").html(t6)
+    $("#a6").removeClass("red")
+    $("#a6").addClass("green")
+    $("#htot6").html(`IDR ${t6*h6}`)
+    $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
+
+  })
+
+  $("#menu12").click(function(){
+    t6-=1
+    if(t1==0&&t2==0&&t3==0&&t4==0&&t5==0&&t6==0&&t7==0&&t8==0){
+      $("#order").hide()
+    }
+    if(t6<=0){
+      $("#tot6").html(t6)
+      $("#a6").removeClass("green")
+      $("#a6").addClass("red")
+      $("#a6").html('')
+      $("#htot6").html(`IDR ${t6*h6}`)
+      $("#p6").hide()
+      t6=0
+    }
+    else{
+      $("#p6").show()
+      $("#tot6").html(t6)
+      $("#a6").html(t6)
+      $("#a6").removeClass("red")
+      $("#a6").addClass("green")
+      $("#htot6").html(`IDR ${t6*h6}`)
+      $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
+    }
+  })
+
+  $("#menu13").click(function(){
+    t7+=1
+    $("#order").show()
+    $( "#p7" ).show()
+    $("#tot7").html(t7)
+    $("#a7").html(t7)
+    $("#a7").removeClass("red")
+    $("#a7").addClass("green")
+    $("#htot7").html(`IDR ${t7*h7}`)
+    $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
+
+  })
+
+  $("#menu14").click(function(){
+    t7-=1
+    if(t1==0&&t2==0&&t3==0&&t4==0&&t5==0&&t6==0&&t7==0&&t8==0){
+      $("#order").hide()
+    }
+    if(t7<=0){
+      $("#tot7").html(t7)
+      $("#a7").removeClass("green")
+      $("#a7").addClass("red")
+      $("#a7").html('')
+      $("#htot7").html(`IDR ${t7*h7}`)
+      $("#p7").hide()
+      t7=0
+    }
+    else{
+      $("#p7").show()
+      $("#tot7").html(t7)
+      $("#a7").html(t7)
+      $("#a7").removeClass("red")
+      $("#a7").addClass("green")
+      $("#htot7").html(`IDR ${t7*h7}`)
+      $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
+    }
+  })
+
+  $("#menu15").click(function(){
+    t8+=1
+    $("#order").show()
+    $( "#p8" ).show()
+    $("#tot8").html(t8)
+    $("#a8").html(t8)
+    $("#a8").removeClass("red")
+    $("#a8").addClass("green")
+    $("#htot8").html(`IDR ${t8*h8}`)
+    $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
+
+  })
+
+  $("#menu16").click(function(){
+    t8-=1
+    if(t1==0&&t2==0&&t3==0&&t4==0&&t5==0&&t6==0&&t7==0&&t8==0){
+      $("#order").hide()
+    }
+    if(t8<=0){
+      $("#tot8").html(t8)
+      $("#a8").removeClass("green")
+      $("#a8").addClass("red")
+      $("#a8").html('')
+      $("#htot8").html(`IDR ${t8*h8}`)
+      $("#p8").hide()
+      t8=0
+    }
+    else{
+      $("#p8").show()
+      $("#tot8").html(t8)
+      $("#a8").html(t8)
+      $("#a8").removeClass("red")
+      $("#a8").addClass("green")
+      $("#htot8").html(`IDR ${t8*h8}`)
+      $("#totalAkhir").html('IDR '+(t1*h1+t2*h2+t3*h3+t4*h4+t5*h5+t6*h6+t7*h7+t8*h8))
     }
   })
 
