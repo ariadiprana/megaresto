@@ -14,4 +14,8 @@ router.get('/history', function(req, res, next) {
   res.render('history');
 });
 
+router.get('/historyadmin', function(req, res, next) {
+  res.render('historyAdmin');
+});
+
 module.exports = router;
