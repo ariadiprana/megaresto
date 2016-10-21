@@ -36,7 +36,7 @@ $(document).ready(function(){
     $.ajax({
       url:'http://localhost:3000/API/order',
       type: 'POST',
-      data: {makanan: makanans, username: 'guest', meja: '777', total: totals, status: 'order'},
+      data: {makanan: makanans, username: 'guest', meja: '777', total: totals, status: 'Order'},
       success: function(result){
         $("#message").show()
         $("#headerContent").html("Your order is successfully being sent...")

@@ -29,23 +29,38 @@ function insert(req,res,next){
     res.json(items)
 }
 
-function update(req,res,next){
-  Orders.findOne({
-    _id:req.params.id
-  },(err,items) => {
-      items.makanan = req.body.makanan
-      items.username = req.body.username
-      items.meja = req.body.meja
-      items.total = req.body.total
-      items.status = req.body.status
-      items.dtCreated = new Date()
 
-      items.save((err)=> {
-        if(err) throw err
-        res.json(items)
-      })
+
+function update(req,res,next){
+  console.log(`parammmsssid`,req.params.id);
+  Orders.update({_id: req.params.id}, {
+      status: req.params.status
+  }, function(err, affected, resp) {
+     
   })
 }
+
+
+// function update(req,res,next){
+//   console.log(`parammmsssid`,req.params.id);
+//   Orders.findOne({
+//     _id:(req.params.id)
+//   },(err,items) => {
+//     console.log('status:',req.params.status);
+//     console.log('itemsAwal:',items);
+//       items.makanan = items.makanan
+//       items.username = items.username
+//       items.meja = items.meja
+//       items.total = items.total
+//       items.status = req.params.status
+//       items.dtCreated = new Date()
+//     console.log('itemsAkhir:',items);
+//       items.save((err)=> {
+//         if(err) throw err
+//         res.json(items)
+//       })
+//   })
+// }
 
 function deleteOne(req,res,next){
   Orders.findOne({

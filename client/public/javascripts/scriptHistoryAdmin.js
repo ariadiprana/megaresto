@@ -28,9 +28,9 @@ $(document).ready(function(){
             <td>${result[i].status}</td>
             <td>
             <select id="${result[i]._id}" class="ui search dropdown">
-              <option value="1">Order</option>
-              <option value="2">Book</option>
-              <option value="3">Delivered</option>
+              <option value="Order">Order</option>
+              <option value="Cook">Cook</option>
+              <option value="Delivered">Delivered</option>
             </select>
 
             </td>
@@ -46,12 +46,37 @@ $(document).ready(function(){
   })
 
     $("#btn-submit").click(function(){
-      $('select.dropdown').each(function() {
-        if($(this).is(':selected')){
-          console.log('a');
+      let id = []
+      let val = []
+        $("select").each(function() {
+       let b = $(this).attr('id')
+       id.push(b);
+        })
+
+        let c = $("select").find('option:selected').each(function() {
+          val.push(this.value)
+        })
+
+      console.log(id);
+      console.log(val);
+      console.log(id[0]);
+      let iddd = id.length-1
+      let ii = val[0];
+      let urls = 'http://localhost:3000/API/order/'+id[iddd]+'/'+val[iddd]
+      console.log(urls);
+      $.ajax({
+        url:urls,
+        type: 'PUT',
+        success: function(result){
+          $("#message").show()
+          $("#headerContent").html("Your order is successfully being sent...")
+          console.log("SUKSES");
+          window.location.href = 'http://localhost:4000/historyadmin'
+
         }
-       let a = $("select.dropdown");
-       console.log(a[0].is(':selected'));
+      })
+
+
+
     })
-  })
 })

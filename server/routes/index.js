@@ -29,7 +29,7 @@ router.get('/API/user/:id', usersController.detail)
 // Order API
 router.post('/API/order', ordersController.insert)
 router.get('/API/order', ordersController.displayAll)
-router.put('/API/order/:id', ordersController.update)
+router.put('/API/order/:id/:status', ordersController.update)
 router.delete('/API/order/:id', ordersController.deleteOne)
 router.delete('/API/order/', ordersController.deleteAll)
 router.get('/API/order/:id', ordersController.detail)
