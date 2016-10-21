@@ -1,6 +1,8 @@
 language: node_js
+before_installl:
+  - nvm install latest
 node_js:
-  - 6.6.0
+  - "6.6.0"
 before_script:
   - npm install
 script:
