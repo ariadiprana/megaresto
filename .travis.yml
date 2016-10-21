@@ -4,4 +4,4 @@ node_js:
 before_script:
   - cd server/ && npm install
 script:
-  - cd server/ && npm test
+  - npm test
